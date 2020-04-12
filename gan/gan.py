@@ -23,7 +23,7 @@ parser.add_argument("-b1","--beta1", type  = float, default = 0.5 , help = "The 
 parser.add_argument("-b2","--beta2", type = float , default = 0.999 , help = "The exponential decay rate for the second moment estimates of adam optimizer")
 parser.add_argument("--cuda",action = "store_true",help="Enable CUDA\nNote:If CUDA is not detected model will run on CPU")
 parser.add_argument("-q","--quiet", action = "store_true" , help = "Stop printing while training")
-parser.add_argument("--interval",type = int ,default=100)
+parser.add_argument("--interval",type = int ,default=250)
 parser.add_argument("--gif",action ="store_true", help = "Create a gif of output images")
 
 args = parser.parse_args()
